@@ -1,6 +1,6 @@
 {
   "name": "@mewui/core",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "dist/@mewui/core/umd/index.js",
   "types": "dist/@mewui/core/@types/index.d.ts",
   "files": [
