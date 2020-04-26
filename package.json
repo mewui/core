@@ -16,10 +16,10 @@
     "build": "webpack --mode=production",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint src --ext .ts",
-    "preversion": "yarn lint",
+    "preversion": "run-p lint test",
     "version": "yarn format && git add -A src",
     "postversion": "git push && git push --tags",
-    "prepublishOnly": "yarn build"
+    "prepublishOnly": "run-p build test"
   },
   "devDependencies": {
     "@types/jest": "^25.2.1",
