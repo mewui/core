@@ -1,4 +1,4 @@
-# MewUI Core
+# MewUI Core ![CI](https://github.com/mewui/core/workflows/CI/badge.svg)
 
 The core component library responsible for providing a way to develop components for MewUI.
 
