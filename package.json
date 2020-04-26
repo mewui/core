@@ -1,0 +1,39 @@
+{
+  "name": "@mewui/core",
+  "version": "0.0.1",
+  "main": "dist/@mewui/core/umd/index.js",
+  "types": "dist/@mewui/core/@types/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "repository": "git@github.com:mewui/core.git",
+  "author": "Sandeep Prasad <s3g007@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --coverage",
+    "dev": "webpack --mode=development --watch",
+    "dev:test": "jest --coverage --watch",
+    "build": "webpack --mode=production",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint src --ext .ts",
+    "preversion": "run-p lint test",
+    "version": "yarn format && git add -A src",
+    "postversion": "git push && git push --tags",
+    "prepublishOnly": "run-p build test"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.13.2",
+    "@typescript-eslint/eslint-plugin": "^2.29.0",
+    "@typescript-eslint/parser": "^2.29.0",
+    "eslint": "^6.8.0",
+    "jest": "^25.4.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.5",
+    "ts-jest": "^25.4.0",
+    "ts-loader": "^7.0.1",
+    "typescript": "^3.8.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}

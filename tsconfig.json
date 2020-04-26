@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "declaration": true,
+    "declarationDir": "dist/@mewui/core/@types",
+    "outDir": "dist/@mewui/core/esm",
+    "module": "commonjs",
+    "lib": ["DOM", "ES2020.String", "ES2015.Collection", "ES2015.Iterable"],
+    "types": ["node", "jest"],
+    "strict": true,
+    "noImplicitAny": true,
+    "forceConsistentCasingInFileNames": true,
+    "downlevelIteration": true,
+    "allowJs": true,
+    "sourceMap": true
+  },
+  "files": ["./src/index.ts"],
+  "exclude": ["node_modules", "dist", "coverage", "tests"]
+}
